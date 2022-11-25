@@ -24,6 +24,7 @@ public class ControllerUser {
 
     @GetMapping("/")
     public String showAllUser (Model model) {
+
         model.addAttribute("allUsers", serviceUser.getAllUser());
 
         return "show-all";
